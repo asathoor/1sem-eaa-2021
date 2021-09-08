@@ -1,0 +1,34 @@
+/**
+ * projekt: Flexbox tutorial
+ * fil: css/style.css
+ **/
+
+/* Google fonts (NB: load før :root) */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+/* font-family: 'Luckiest Guy', cursive; */
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  /* farver */
+  --blue: #1e90ff;
+  --white: #ffffff;
+
+  /* fonte */
+  --font: 'Trebuchet MS', sans-serif; /* brødtekst */
+  --displayH: 'Luckiest Guy', cursive; /* overskrifter */
+
+  /* teksturer ("fliselagte baggrunde") */
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  background-color: var(--blue);
+  font-family: var(--font);
+}
+
+/* Typografi */
+h1 {
+  font-family: var(--displayH);
+}
+
+/* Layout: Flexbox */

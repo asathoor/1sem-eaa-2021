@@ -32,3 +32,20 @@ h1, h2 {
 }
 
 /* Layout: Flexbox */
+/* tutorial: https://css-tricks.com/snippets/css/a-guide-to-flexbox */
+
+#content {
+  display: flex; /* får indholdet i containeren til at flexe */
+  justify-content: space-evenly; /* se andre muligheder i tutorialen */
+}
+
+aside {
+  width: 33%; /* giv elementerne en bredde */
+}
+
+main {
+  width: 65%; /* do. */
+}
+
+/* align items */
+/* align content */

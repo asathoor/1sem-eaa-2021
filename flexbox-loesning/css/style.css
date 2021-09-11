@@ -12,12 +12,15 @@
   /* farver */
   --blue: #1e90ff;
   --white: #ffffff;
+  --orange: #f28a13;
 
   /* fonte */
   --font: 'Trebuchet MS', sans-serif; /* brødtekst */
   --displayH: 'Luckiest Guy', cursive; /* overskrifter */
 
-  /* teksturer ("fliselagte baggrunde") */
+  /* teksturer ("fliselagte baggrunde", eng. seamless image) */
+  --stars: url('../images/258px-StarfieldSimulation004.gif');
+  /* Animation from Wikipedia: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/StarfieldSimulation004.gif/258px-StarfieldSimulation004.gif */
 }
 
 /* Her bruges en variabel: --blue */
@@ -28,7 +31,16 @@ body {
 
 /* Typografi */
 h1, h2 {
+  color: var(--white);
+  text-align: center;
   font-family: var(--displayH);
+  padding-bottom: 20px;
+}
+
+/* Sætter en baggrund */
+header, footer {
+  background-image: var(--stars);
+  min-height: 150px;
 }
 
 /* Layout: Flexbox */
@@ -40,12 +52,28 @@ h1, h2 {
 }
 
 aside {
-  width: 33%; /* giv elementerne en bredde */
+  width: 250px; /* giv elementerne en bredde */
+  background-color: var(--orange);
+  padding: 2rem;
 }
 
 main {
+  padding: 12px;
   width: 65%; /* do. */
 }
 
-/* align items */
-/* align content */
+/*
+  Løsnig: rækker med produkter.
+  Se filen: row-sample.html.
+*/
+.raekke {
+  display: flex;
+}
+
+.produkt {
+  width: 30%;
+}
+
+.produkt img {
+  width: 100%;
+}

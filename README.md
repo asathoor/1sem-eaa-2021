@@ -7,4 +7,6 @@ På dette repo finder du boilerplates og eksempler fra undervisningen. Boilerpla
 1. Klon dette repo via Github Desktop (fx)
 2. Kopier de mapper du får brug for til en ny mappe.
 
+xxxx
+
 / petj

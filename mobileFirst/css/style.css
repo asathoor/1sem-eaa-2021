@@ -1,22 +1,66 @@
 /**
  * fil: css/style.css
  **/
+
+/* Reset: Meyer Style */
+@import 'reset.css';
+
 /* Variabler: genbruges og gør designvalg enkle */
 :root {
   /* farver */
-  --blue: #1e90ff;
+  --dark: #190604;
   --white: #ffffff;
+  --brun: #a86c12;
+  --groen: #99a812;
+  --roed: #a82112;
+
   /* fonte */
+  --overskrift: 'Brush Script MT', cursive;
+  --broedtekst: Helvetica, sans-serif;
+
+  /* whitespace */
+  --whitespace: 2em;
 }
 
 /* Her bruges en variabel: --blue */
 body {
-  background-color: var(--blue);
+  background-color: var(--brun);
+  font-family: var(--broedtekst);
 }
 
-/* Layout */
+/* Wrap */
+#wrap {
+  min-height: 100vh;
+}
 
-/* Typografi */
-h2 {
-  border-bottom: 2px solid var(--blue);
+/* Navigation and footer */
+nav,
+footer {
+  background-color: var(--dark);
+  padding: 35px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul,
+footer ul {
+  display: flex; /* horisontal menu */
+  justify-content: center;
+}
+
+nav ul li,
+footer ul li {
+  margin-right: 4ch;
+}
+
+nav a,
+footer {
+  color: var(--white);
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
 }

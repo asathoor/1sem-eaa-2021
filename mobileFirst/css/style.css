@@ -166,7 +166,7 @@ Research:
     display: none;
   }
 
-  /* Flexbox */
+  /* --- Flexbox (responsivt flex) --- */
   main {
     display: flex;
     flex-wrap: wrap;
@@ -176,9 +176,21 @@ Research:
      */
   }
 
+  /* Forklaring:
+  main > * betyder: for alle "børn" af main { ... css her  ...}
+  Se disse tutorials
+
+  @url: https://flexbox-pattern-cheatsheet.kevinpowell.co/
+  @url: https://www.w3schools.com/cssref/css3_pr_flex.asp
+   */
   main > * {
     flex: 1 1 32ch;
   }
+  /*
+  Forkortelsen 'flex' kan sætte flere værdier på en gang.
+  Mere om anvendelsen af flex her:
+  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+  */
 
 }
 

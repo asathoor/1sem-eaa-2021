@@ -54,9 +54,12 @@ li {
 }
 
 main {
-  padding-top: 4vh;
-  min-height: 92vh; /* 92 + 8 = 100 */
+  position: absolute;
+  top: 0px;
   width: 100%;
+  padding-top: 4vh;
+  min-height: 96vh; /* 96 + 4 = 100 */
+
 
   /* baggrund: transparent gradient */
   background:

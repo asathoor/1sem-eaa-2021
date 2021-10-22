@@ -190,6 +190,12 @@ Research:
   Forkortelsen 'flex' kan sætte flere værdier på en gang.
   Mere om anvendelsen af flex her:
   @url: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+
+  Fx: Three values: flex-grow | flex-shrink | flex-basis
+  flex: 2 2 10%;
+
+  Alternativt bruges box sizing, se
+  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
   */
 
 }

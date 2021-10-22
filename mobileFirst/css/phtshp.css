@@ -1,8 +1,11 @@
 /**
  * Effects a la Photoshop or GIMP
  **/
+
+/* remove browser specific styles */
 @import 'css/reset.css';
 
+/* variabler */
 :root {
   --opacity: 60%;
 }
@@ -13,12 +16,14 @@
 @keyframes myTransition {
   from {
     background-color: #000;
+    color: #000;
   }
   to {
     background-color:rgba(221,138,13,0.0);
     }
 }
 
+/* Layout */
 body {
   background-color: #000;
   margin: 0px 0px 0px 0px;
@@ -52,9 +57,10 @@ li {
 
 main {
   padding-top: 8vh;
-  /* size and bg */
-  min-height: 100vh;
+  min-height: 92vh; /* 92 + 8 = 100 */
   width: 100%;
+
+  /* baggrund: transparent gradient */
   background:
     linear-gradient(#e2c936, #e27236, rgba(221,138,13,0.4)),
     url('../images/moesgaard.png');
@@ -63,10 +69,13 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-blend-mode: multiply;
 
-  /* Transition */
-  animation-name: myTransition;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
+  /* blend mode (a la Gimp / Photoshop) */
+  background-blend-mode: multiply;
+  /* se @url: https://www.w3schools.com/cssref/playit.asp?filename=playcss_background-blend-mode */
+
+  /* Transition (== css animation) */
+  animation-name: myTransition; /* animationens navn */
+  animation-duration: 4s; /* varighed */
+  animation-timing-function: ease-in-out; /* easing */
 }

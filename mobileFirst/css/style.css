@@ -19,13 +19,43 @@
   --broedtekst: Helvetica, sans-serif;
 
   /* whitespace */
-  --whitespace: 2em;
+  --whitespace: .5em;
 }
 
 /* Her bruges en variabel: --blue */
 body {
-  background-color: var(--brun);
   font-family: var(--broedtekst);
+  background-color: var(--brun);
+  color: var(--white);
+}
+
+/* Typografisk */
+h1,
+h2,
+h3 {
+  font-family: var(--overskrift);
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+}
+
+p {
+  margin-left: var(--whitespace);
+  margin-right: var(--whitespace);
+  padding-bottom: var(--whitespace);
+  font-size: 1.2em;
+}
+
+figcaption {
+  font-style: italic;
+  margin-left: var(--whitespace);
+  margin-right: var(--whitespace);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
 }
 
 /* Wrap */
@@ -60,7 +90,106 @@ footer {
 
 /* Footer */
 footer {
-  position: absolute;
-  bottom: -20px;
   width: 100%;
+  margin-bottom: 0px; /* fordi: nedarver 20px fra nav,footer */
+}
+
+/* Sections (højde == skærmhøjde) */
+section {
+  background-color: var(--roed);
+}
+
+/* Billeder */
+img {
+  width: 100%;
+}
+
+/* MOBILE FIRST (via Flexbox) */
+
+/* 1. Mobile enheder (begynd her) */
+
+/*
+Research:
+* iPhone: 320 .. 375
+*/
+
+@media only screen and (max-width: 320px) {
+  body {
+    background-color: var(--groen);
+  }
+  /* Menu */
+
+  /* vis burger */
+  #showMenu {
+    display: block;
+  }
+
+  /* skjul menu og burgermenu */
+  #menu,
+  #burgerMenu {
+    display: none;
+  }
+
+  /* vis menu ved hover */
+  #showMenu:hover > #burgerMenu {
+    display: block;
+  }
+
+  /*
+  Husk at man skal kunne navigere med fingrene:
+  1. Knapper
+  2. Links
+  3. Stor let læsbar font
+  4. Burgermenu (evt. med CSS animation)
+  */
+}
+
+/* 2. Tablets mv. (fortsæt her) */
+
+/*
+Research:
+* iPad width > 321px
+*/
+@media only screen and (min-width: 321px) {
+  body {
+    background-color: var(--brun);
+  }
+  /* Flexbox: design efter skitser */
+  /*
+  Husk, at iPads kan vendes! Lav CSS for både stående og liggende enhed
+  */
+  #wrap {
+    max-width: 700px;
+    margin:auto;
+  }
+
+  /* Menu */
+  #showMenu {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* ny funktion! */
+  }
+
+  main > * {
+    flex: 1 1 32ch;
+  }
+
+}
+
+/* 3. Stor skærm (slut her) */
+@media only screen and (min-width: 760px) {
+  body {
+    background-color: var(--white);
+    color: var(--dark);
+  }
+
+  #wrap {
+    max-width: 80%;
+    margin:auto;
+  }
+  /* Flexbox */
 }

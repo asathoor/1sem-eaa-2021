@@ -19,10 +19,15 @@
 	<style>
 		nav {
 			display: block;
-			height: 100vh;
+			min-height: 100vh;
 		}
+
 		nav ul {
 			display: block;
+		}
+
+		nav a {
+			color: #fff;
 		}
 	</style>
 
@@ -31,17 +36,13 @@
 </head>
 
 <body>
-		<!-- Emmet tip: nav>ul>li{Menu $}*3 -->
-		<nav>
-			<!-- Menuer laves som regel i form af uordnede lister.
-					 Listerne kan styles så de går vandret eller lodret
-				 -->
-			<ul id="menu">
-				<li><a href="index.html"> Hjem </a></li>
-				<li><a href="#bbb"> Om os </a></li>
-				<li><a href="#ccc"> Efterår </a></li>
-			</ul>
-
-		</nav>
+	<nav>
+		<ul>
+			<li><a href="index.html"> Hjem </a></li>
+			<li><a href="index.html#bbb"> Om os </a></li>
+			<li><a href="index.html#ccc"> Efterår </a></li>
+		</ul>
+	</nav>
 </body>
+
 </html>

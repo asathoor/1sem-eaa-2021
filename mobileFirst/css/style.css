@@ -45,6 +45,7 @@ p {
   margin-right: var(--whitespace);
   padding-bottom: var(--whitespace);
   font-size: 1.2em;
+  max-width: 35ch; /* undgå lange ulæselige linjer */
 }
 
 figcaption {
@@ -86,6 +87,7 @@ footer ul li {
 nav a,
 footer {
   color: var(--white);
+  text-decoration: none;
 }
 
 /* Footer */
@@ -130,11 +132,6 @@ Research:
     display: none;
   }
 
-  /* vis menu ved hover */
-  #showMenu:hover > #burgerMenu {
-    display: block;
-  }
-
   /*
   Husk at man skal kunne navigere med fingrene:
   1. Knapper
@@ -164,10 +161,18 @@ Research:
   }
 
   /* Menu */
+  /* vis burger */
   #showMenu {
+    display: block;
+  }
+
+  /* skjul menu og burgermenu */
+  #menu,
+  #burgerMenu {
     display: none;
   }
 
+  /* Flexbox */
   main {
     display: flex;
     flex-wrap: wrap;
@@ -186,8 +191,17 @@ Research:
 /* 3. Stor skærm (slut her) */
 @media only screen and (min-width: 760px) {
   body {
-    background-color: var(--white);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--white);
+  }
+
+  /* Menu vises */
+
+  #showMenu {
+    display: none;
+  }
+  #menu {
+    display: flex;
   }
 
   #wrap {

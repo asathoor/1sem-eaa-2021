@@ -1,3 +1,3 @@
-# HTML Boilerplate
+# Mobile Web App
 
 Kopier filerne i denne mappe til dine projekter. Det giver en nem start, hvor strukturen med HTML og CSS er på plads fra begyndelsen.

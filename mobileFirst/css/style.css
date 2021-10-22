@@ -3,6 +3,7 @@
  **/
 
 /* Reset: Meyer Style */
+/* fjerner default browser styles */
 @import 'reset.css';
 
 /* Farve- og fontvariabler */
@@ -109,7 +110,6 @@ img {
 /* MOBILE FIRST (via Flexbox) */
 
 /* 1. Mobile enheder (begynd her) */
-
 @media only screen and (max-width: 320px) {
   body {
     background-color: var(--groen);
@@ -137,7 +137,6 @@ img {
 }
 
 /* 2. Tablets mv. (fortsæt her) */
-
 /*
 Research:
 * iPad width > 321px
@@ -191,7 +190,6 @@ Research:
   }
 
   /* Menu vises */
-
   #showMenu {
     display: none;
   }

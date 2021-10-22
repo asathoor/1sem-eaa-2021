@@ -110,11 +110,6 @@ img {
 
 /* 1. Mobile enheder (begynd her) */
 
-/*
-Research:
-* iPhone: 320 .. 375
-*/
-
 @media only screen and (max-width: 320px) {
   body {
     background-color: var(--groen);

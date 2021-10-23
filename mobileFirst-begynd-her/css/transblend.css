@@ -63,8 +63,10 @@ main {
 
   /* baggrund: transparent gradient */
   background:
-    linear-gradient(#e2c936, #e27236, rgba(221,138,13,0.4)),
-    url('../images/moesgaard.png');
+    linear-gradient(
+      #e2c936,
+      #e27236, rgba(221,138,13,0.4)),
+      url('../images/moesgaard.png');
 
   /* bg behavior */
   background-size: cover;

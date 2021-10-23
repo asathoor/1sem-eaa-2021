@@ -107,48 +107,50 @@ img {
   width: 100%;
 }
 
-/* MOBILE FIRST ØVELSER */
+/* MOBILE FIRST (via Flexbox) */
 
 /* 1. Mobile enheder (begynd her) */
 @media only screen and (max-width: 320px) {
-  /* 1.1: Vælg en baggrundsfarve til body */
+  /* A. Giv baggrunden en farve */
 
-  /* 1.2: Vis burgeren */
+  /* === Menuen === */
 
-  /* 1.3: Skjul menuen */
+  /* B. vis burgeren */
 
-  /* 1.4: Brug en stor læsbar font til brødtekst,
-  en passende kreativ font til overskrifter,
-  og store links man kan ramme med fingrene */
+  /* C. Skjul menu og burgermenu */
 
-  /* 1.5: Den responsive menu (mob-menu.html)
+  /**
+   * Videre
 
-   * Knapper
-   * Links
-   * Burgermenu (evt. med CSS animation)
-
-   Styling af den responsive menu mob-menu.html
-   med transitioner, photoshop-agtige effekter
-   samt klikbare billeder.
+  Husk at man skal kunne navigere med fingrene:
+  D. Knapper
+  E. Links
+  F. Stor let læsbar font
+  G. Burgermenu (evt. med CSS animation)
   */
 }
 
 /* 2. Tablets mv. (fortsæt her) */
+/*
+Research:
+* iPad width > 321px
+*/
 @media only screen and (min-width: 321px) {
-  /* 2.1: Giv baggrunden en farve */
+  /* Vælg en anden baggrundsfarve til tablets */
 
-  /* 2.2: Give #wrap en fast max-bredde, fx 700px.
-     2.3: Sørg for at #wrap står i centrum af vinduet. */
+  /* Flexbox: design efter skitser */
 
-  /* 2.4 Vis burger */
+  /* Menu */
 
-  /* 2.5: Skjul menuen */
+  /* 2.A. gør burgeren synlig */
+
+  /* 2.B Skjul menu og burgermenu */
 
   /* --- Flexbox (responsivt flex) --- */
 
-  /* 2.6: Få main til at flexe, sæt flex-wrap til wrap og gab til 10px */
+  /* 2.C. Sæt main til flex, flex-wrap til wrap og gap på 10px */
 
-  /* 2.7: Hvordan underelementer gøres responsive:
+  /* 2.D Forklaring:
 
   main > * betyder: for alle "børn" af main { ... css her  ...}
   Se disse tutorials
@@ -156,10 +158,14 @@ img {
   @url: https://flexbox-pattern-cheatsheet.kevinpowell.co/
   @url: https://www.w3schools.com/cssref/css3_pr_flex.asp
 
+  Prøv:
+
   main > * {
     flex: 1 1 32ch;
   }
+   */
 
+  /*
   Forkortelsen 'flex' kan sætte flere værdier på en gang.
   Mere om anvendelsen af flex her:
   @url: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
@@ -175,17 +181,14 @@ img {
 
 /* 3. Stor skærm (slut her) */
 @media only screen and (min-width: 760px) {
+  /* 3.A.: Giv baggrunden en ny farve, sørg for en god kontrat til tekst. */
 
-  /* 3.1: Giv baggrunden en farve og sørg for god farvekontrast til tekst */
+  /* 3.B.: Skjul burgeren */
 
-  /* 3.2: Skjul burgeren */
+  /* 3.C.: Vis menuen, og gør den horisontal */
 
-  /* 3.3: Vis menuen */
+  /* 3.D.: #wrap må max fylde 80% og designet skal være centreret  */
 
-  /* 3.4: Gør menuen horisontal */
-
-  /* 3.5 Giv #wrap en max-width på 80% og lad #wrap stå centreret i vinduet */
-
-  /* 3.6 Lad den føste section fylde 100% i bredden  */
+  /* 3.E.: Giv fuld bredde til øverste section */
 
 }

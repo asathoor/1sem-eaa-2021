@@ -150,7 +150,7 @@ Research:
   Husk, at iPads kan vendes! Lav CSS for både stående og liggende enhed
   */
   #wrap {
-    max-width: 700px;
+    max-width: 700px; /* Holder designet til max 700px */
     margin:auto;
   }
 
@@ -195,7 +195,7 @@ Research:
   flex: 2 2 10%;
 
   Alternativt bruges box sizing, se
-  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing 
+  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
   */
 
 }
@@ -207,17 +207,26 @@ Research:
     color: var(--white);
   }
 
-  /* Menu vises */
+  /* Skjuler burgeren */
   #showMenu {
     display: none;
   }
+
+  /* Viser menuen */
   #menu {
-    display: flex;
+    display: block;
+  }
+  #menu li {
+    display: inline;
   }
 
+  /* Vises centreret i vinduet */
   #wrap {
     max-width: 80%;
     margin:auto;
   }
-  /* Flexbox */
+  /* fuld bredde til øverste section: ; */
+  #aaa {
+    flex:100%;
+  }
 }

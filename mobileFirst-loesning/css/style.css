@@ -6,6 +6,11 @@
 /* fjerner default browser styles */
 @import 'reset.css';
 
+* {
+  /* padding inkluderes i bredden med border-box */
+  box-sizing: border-box;
+}
+
 /* Farve- og fontvariabler */
 :root {
   /* farver */

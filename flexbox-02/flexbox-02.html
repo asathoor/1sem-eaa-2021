@@ -1,0 +1,151 @@
+<!-- Demonstration -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flexbox 02: proportioner</title>
+  <style>
+    #wrap {
+      width: 100%;
+    }
+
+    article,
+    div {
+      padding: 1ch;
+    }
+
+    /* billeder vokser ikke ud af kassen */
+    img {
+      max-width: 100%;
+      min-width: 150px;
+    }
+
+
+    /* Flexbox mobile first udkast */
+    .raekke {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .raekke>* {
+      border: 1px solid green;
+    }
+
+    .kolonne {
+      flex: 8;
+    }
+
+    .venstre {
+      flex: 3;
+    }
+
+    /* Eksperiment: Det gyldne snit */
+    .gyldne {
+      display: flex;
+      height: 250px;
+    }
+
+    .gyldne>* {
+      border: 1px solid pink;
+    }
+
+    .snitA {
+      flex: 5;
+    }
+
+    .snitB {
+      flex: 3;
+    }
+
+    /* Loven om tredjedele */
+    .tredje {
+      display: flex;
+      height: 250px;
+    }
+
+    .tredje > * {
+      border: 1px solid blue;
+    }
+
+    .delA {
+      flex: 1 1 67%;
+    }
+
+    .delB {
+      flex: 1 1 33%;
+    }
+
+    /* Billeder */
+    /* NB: bruger .raekke som flexer */
+
+    .billeder {
+      flex: 1 1 2ch;
+      min-width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Flexbox 02: Proportioner</h1>
+
+  <h2>Flexbox responsiv</h2>
+  <div id="wrap">
+    <section class="raekke">
+      <article class="venstre">
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, voluptatem.</p>
+      </article>
+      <article class="kolonne">
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, voluptatem.</p>
+      </article>
+      <article class="kolonne">
+        <h2>Lorem ipsum dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, voluptatem.</p>
+      </article>
+    </section>
+  </div>
+
+  <h2>Det Gyldne Snit (5:8)</h2>
+  <article class="gyldne">
+    <div class="snitA">Lorem4</div>
+    <div class="snitB">Lorem4</div>
+  </article>
+
+  <h2>Loven om Tredjedele #</h2>
+  <article class="tredje">
+    <div class="delA">
+      Lorem ipsum dolor sit.
+    </div>
+    <div class="delB">
+      Lorem ipsum dolor sit.
+    </div>
+  </article>
+
+  <h2>Billeder</h2>
+
+  <h2>Flexbox responsiv</h2>
+  <div id="wrap">
+    <section class="raekke">
+      <article class="billeder">
+        <img src="billeder/havn.jpg" alt="Havnen i Aarhus, sommeren 2021">
+      </article>
+      <article class="billeder">
+<img src="billeder/havn.jpg" alt="Havnen i Aarhus, sommeren 2021">
+        </article>
+      <article class="billeder">
+<img src="billeder/havn.jpg" alt="Havnen i Aarhus, sommeren 2021">
+      </article>
+    </section>
+  </div>
+
+  <h2>Udfordirng</h2>
+  <p>Loven om tredjedele - lodret!</p>
+
+</body>
+
+</html>

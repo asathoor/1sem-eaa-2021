@@ -25,7 +25,7 @@
   --broedtekst: Helvetica, sans-serif;
 
   /* whitespace */
-  --whitespace: .5rem;
+  --whitespace: 2rem;
 }
 
 /* Her bruges en variabel: --blue */
@@ -40,15 +40,14 @@ h1,
 h2,
 h3 {
   font-family: var(--overskrift);
-  font-size: 2.2em;
+  font-size: 3rem;
   text-align: center;
   margin-top: var(--whitespace);
   margin-bottom: var(--whitespace);
 }
 
 p {
-  margin-left: var(--whitespace);
-  margin-right: var(--whitespace);
+  margin: var(--whitespace) var(--whitespace);
   padding-bottom: var(--whitespace);
   font-size: 1.2em;
   max-width: 35ch; /* undgå lange ulæselige linjer */
@@ -58,6 +57,11 @@ figcaption {
   font-style: italic;
   margin-left: var(--whitespace);
   margin-right: var(--whitespace);
+}
+
+/* header */
+header {
+  padding: var(--whitespace) var(--whitespace);
 }
 
 /* Smooth scroll */

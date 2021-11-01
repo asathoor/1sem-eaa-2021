@@ -1,0 +1,151 @@
+/**
+ * fil: css/style.css
+ **/
+/* Reset: Meyer Style */
+/* fjerner default browser styles */
+@import 'reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Roboto:wght@500&display=swap');
+
+/**
+font-family: 'Fruktur', cursive;
+font-family: 'Roboto', sans-serif;
+**/
+/* Farve- og fontvariabler */
+:root {
+  /* farver */
+  --dark: #190604;
+  --white: #ffffff;
+  --brun: #a86c12;
+  --groen: #99a812;
+  --roed: #a82112;
+  /* fonte */
+  --overskrift: 'Brush Script MT', cursive;
+  --broedtekst: 'Fruktur', cursive;
+  /* whitespace */
+  --whitespace: .5rem;
+}
+
+/* Her bruges en variabel: --blue */
+body {
+  font-family: var(--broedtekst);
+  background-color: var(--brun);
+  color: var(--white);
+  font-family: var(--broedtekst);
+}
+
+/* Typografisk */
+h1,
+h2,
+h3 {
+  font-family: var(--overskrift);
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: var(--whitespace);
+  margin-bottom: var(--whitespace);
+}
+
+p {
+  margin-left: var(--whitespace);
+  margin-right: var(--whitespace);
+  padding-bottom: var(--whitespace);
+  font-size: 1.2em;
+  max-width: 35ch;
+  /* undgå lange ulæselige linjer */
+}
+
+figcaption {
+  font-style: italic;
+  margin-left: var(--whitespace);
+  margin-right: var(--whitespace);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Wrap */
+#wrap {
+  min-height: 100vh;
+}
+
+/* Navigation and footer */
+nav,
+footer {
+  background-color: var(--dark);
+  padding: 35px 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul,
+footer ul {
+  display: flex;
+  /* horisontal menu */
+  justify-content: center;
+}
+
+nav ul li,
+footer ul li {
+  margin-right: 4ch;
+}
+
+nav a,
+footer {
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-bottom: 0px;
+  /* fordi: nedarver 20px fra nav,footer */
+}
+
+/* Sections (højde == skærmhøjde) */
+section {
+  background-color: var(--roed);
+}
+
+/* Billeder */
+img {
+  width: 100%;
+}
+
+/* MOBILE FIRST ØVELSER */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #aaa {
+    background-color: orange;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 1024px) {
+  #aaa {
+    background-color: aqua;
+  }
+}
+
+/* tablet ipad pro landscape */
+@media only screen and (min-width: 1366px) {
+  #aaa {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(29, 137, 253, 0.19497478386167144) 62%, rgba(252, 176, 69, 1) 100%)
+  }
+
+  main {
+    display: flex;
+  }
+
+  #wrap {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+/* large screens */
+@media only screen and (min-width: 1400px) {
+  /* regler herfra */
+}

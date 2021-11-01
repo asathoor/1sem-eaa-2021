@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Mobile First Menu</title>
+
+	<!-- SEO -->
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+
+	<!-- viewport skaleres -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		nav {
+
+			background-color: pink;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100vh;
+		}
+
+		nav ul {
+			display: block;
+		}
+
+		nav a {
+			color: #fff;
+			font-size: 10vh;
+		}
+		li {
+			height: 20vh;
+		}
+
+/* iphonne portrait */
+@media only screen and (max-width: 600px) {
+		nav {
+			background-color: red;
+		}
+}
+
+/* iphone landscape */
+@media only screen and (min-width: 812px) {
+	nav {
+		/*background-color: green;*/
+
+		background:
+		linear-gradient(red,blue,rgba(221,138,13,0.4)),
+		url('images/moesgaard.png');
+		background-blend-mode: multiply;
+	}
+}
+
+/* tablets: iPad mv. */
+@media only screen and (min-width: 768px) {
+	nav {
+		/*background-color: green;*/
+
+		background:
+		linear-gradient(green,violet,rgba(221,138,13,0.4)),
+		url('images/moesgaard.png');
+
+	}
+
+}
+
+/* tablets: iPad landscape */
+@media only screen and (min-width: 1024px) {
+	nav {
+		/*background-color: green;*/
+		background:
+		linear-gradient(red,blue,rgba(221,138,13,0.4)),
+		url('images/moesgaard.png');
+		background-blend-mode: darken;
+
+	}
+	nav li a {
+		color: lime;
+	}
+
+
+}
+	</style>
+
+	<!-- favicon = ikon i faneblad / browser -->
+	<link rel="icon" type="image/x-icon" href="images/smiley_32x32.png" />
+</head>
+
+
+
+
+<body>
+	<nav>
+		<ul>
+			<li><a href="mobile-first.html"> Hjem </a></li>
+			<li><a href="mobile-first.html#bbb"> Om os </a></li>
+			<li><a href="mobile-first.html#ccc"> ☃ </a></li>
+		</ul>
+	</nav>
+</body>
+
+</html>

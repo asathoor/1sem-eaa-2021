@@ -108,84 +108,27 @@ img {
 }
 
 /* MOBILE FIRST ØVELSER */
-
-/* 1. Mobile enheder (begynd her) */
-@media only screen and (max-width: 320px) {
-  /* 1.1: Vælg en baggrundsfarve til body */
-
-  /* 1.2: Vis burgeren */
-
-  /* 1.3: Skjul menuen */
-
-  /* 1.4: Brug en stor læsbar font til brødtekst,
-  en passende kreativ font til overskrifter,
-  og store links man kan ramme med fingrene */
-
-  /* 1.5: Den responsive menu (mob-menu.html)
-
-   * Knapper
-   * Links
-   * Burgermenu (evt. med CSS animation)
-
-   Styling af den responsive menu mob-menu.html
-   med transitioner, photoshop-agtige effekter
-   samt klikbare billeder.
-  */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  main {background: red;}
 }
 
-/* 2. Tablets mv. (fortsæt her) */
-@media only screen and (min-width: 321px) {
-  /* 2.1: Giv baggrunden en farve */
-
-  /* 2.2: Give #wrap en fast max-bredde, fx 700px.
-     2.3: Sørg for at #wrap står i centrum af vinduet. */
-
-  /* 2.4 Vis burger */
-
-  /* 2.5: Skjul menuen */
-
-  /* --- Flexbox (responsivt flex) --- */
-
-  /* 2.6: Få main til at flexe, sæt flex-wrap til wrap og gab til 10px */
-
-  /* 2.7: Hvordan underelementer gøres responsive:
-
-  main > * betyder: for alle "børn" af main { ... css her  ...}
-  Se disse tutorials
-
-  @url: https://flexbox-pattern-cheatsheet.kevinpowell.co/
-  @url: https://www.w3schools.com/cssref/css3_pr_flex.asp
-
-  main > * {
-    flex: 1 1 32ch;
-  }
-
-  Forkortelsen 'flex' kan sætte flere værdier på en gang.
-  Mere om anvendelsen af flex her:
-  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/flex
-
-  Fx: Three values: flex-grow | flex-shrink | flex-basis
-  flex: 2 2 10%;
-
-  Alternativt bruges box sizing, se
-  @url: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
-  */
-
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  main {background: green;}
 }
 
-/* 3. Stor skærm (slut her) */
-@media only screen and (min-width: 760px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  main {background: blue;}
+}
 
-  /* 3.1: Giv baggrunden en farve og sørg for god farvekontrast til tekst */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  main {background: orange;}
+}
 
-  /* 3.2: Skjul burgeren */
-
-  /* 3.3: Vis menuen */
-
-  /* 3.4: Gør menuen horisontal */
-
-  /* 3.5 Giv #wrap en max-width på 80% og lad #wrap stå centreret i vinduet */
-
-  /* 3.6 Lad den føste section fylde 100% i bredden  */
-
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
 }

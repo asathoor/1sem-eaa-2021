@@ -4,7 +4,7 @@ Når du vil anmode søgemaskinger om **IKKE** at registrere din webside, så ska
 
 `robots.txt`
 
-Indholdet i filen er:
+Indholdet i filen kan fx se sådan ud:
 
 ~~~~
 User-agent: *

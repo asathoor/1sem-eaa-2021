@@ -11,6 +11,13 @@ User-agent: *
 Disallow: / 
 ~~~~
 
-Det kan oversættes til "User-agent" er søgemaskiner, og stjernen betyder "alle søgemaskiner". Disallow / betyder, at alle filer på sitet er omfattet.
+Det kan oversættes til "User-agent" er søgemaskiner, og stjernen betyder "alle søgemaskiner". Man kan evt. vælge, hvilke søgemaskiner, der ikke skal indeksere. Disallow / betyder, at alle filer på sitet er omfattet.
+
+
+I html `<head>` kan du tilføje denne tag:
+
+~~~~
+<meta name="robots" content="noindex" />
+~~~~
 
 Mere om robots.txt - [se her](https://www.wikihow.com/Block-Search-Engines)

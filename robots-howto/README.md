@@ -17,7 +17,7 @@ Det kan oversættes til "User-agent" er søgemaskiner, og stjernen betyder "alle
 I de html-filer, som ikke skal registreres, kan du i `<head>` tilføje denne tag:
 
 ~~~~
-<meta name="robots" content="noindex" />
+<meta name="robots" content="noindex">
 ~~~~
 
 Mere om robots.txt - [se her](https://www.wikihow.com/Block-Search-Engines)
